@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RGB</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<div id="container">
+
+    <div class="row">
+        <span class="titleRgb">(R) Vermelho: </span>
+        <input type="range" min="0" max="255" value="255" id="r" onchange="changeRange()">
+        <input type="text" id="r-label" name="country" value="255" disabled>
+    </div>
+
+    <br>
+
+    <div class="row">g
+        <span class="titleRgb">(G) Verde: </span>
+        <input type="range" min="0" max="255" value="255" id="g" onchange="changeRange()">
+        <input type="text" id="g-label" name="country" value="255" disabled>
+    </div>
+
+    <label>
+        <span class="titleRgb">(B) Azul: </span>
+        <input type="range" min="0" max="255" value="255" id="b" onchange="changeRange()">
+        <input type="text" id="b-label" name="country" value="255" disabled>
+    </label>
+
+</div>
+
+<div id="hex-label">
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
